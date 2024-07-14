@@ -1,3 +1,5 @@
+"use client";
+
 import { Socials } from "../../constants/index";
 import Image from "next/image";
 import React from "react";

@@ -12,35 +12,52 @@ const Projects = () => {
       <h1 className="text-[28px] sm:text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-10 sm:py-20 text-center">
         My Projects
       </h1>
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10 w-full max-w-[1200px]">
-        <div className="w-full h-full">
+        {/* Peggy Gou Clone */}
+        <a
+          href="https://peggy-gou-clone.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="order-2 lg:order-1"
+        >
           <ProjectCard
-            src="/PlaceHolder.png"
-            title="place holder"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            title="Peggy Gou Clone"
+            description="How's this for a change."
+            iframeUrl="https://peggy-gou-clone.vercel.app/"
           />
-        </div>
-        <div className="w-full h-full">
+        </a>
+
+        {/* Paisana Clone with animated border */}
+        <div className="relative group order-1 lg:order-2">
+          <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-gradient-xy"></div>
           <a
-            href="https://quote-generator-eight-delta.vercel.app/"
-            className="block w-full h-full"
+            href="https://paisana-clone.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
+            className="block relative bg-[#030014] rounded-lg"
           >
             <ProjectCard
-              src="/QuoteApp.png"
-              title="Quote Generator"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              title="Paisana Clone"
+              description="Look Matter, Motions Matter."
+              iframeUrl="https://paisana-clone.vercel.app/"
             />
           </a>
         </div>
-        <div className="w-full h-full">
+
+        {/* Neiropraktika */}
+        <a
+          href="https://neiropraktika.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="order-3"
+        >
           <ProjectCard
-            src="/PlaceHolder.png"
-            title="place holder"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            title="Neiropraktika"
+            description="This could be your site!"
+            iframeUrl="https://neiropraktika.vercel.app/"
           />
-        </div>
+        </a>
       </div>
     </div>
   );

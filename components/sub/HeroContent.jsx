@@ -1,12 +1,15 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { slideInFromLeft, slideInFromRight, slideInFromTop } from '../../utils/motion';
 import { SparklesIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 
+import BioModal from './BioModal';
+
 const HeroContent = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <motion.div
       initial="hidden"
@@ -32,7 +35,7 @@ const HeroContent = () => {
               {' '}
               the best{' '}
             </span>
-            project exprience
+            solutions
           </span>
         </motion.div>
 
@@ -43,12 +46,16 @@ const HeroContent = () => {
           I&apos;m a Full Stack Software Engineer with experience in Website, Mobile, and Software
           development. Check out my projects and skills.
         </motion.p>
+
         <motion.a
           variants={slideInFromLeft(1)}
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] mx-auto lg:mx-0"
+          onClick={() => setIsModalOpen(true)}
         >
           Learn More!
         </motion.a>
+
+        <BioModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       </div>
 
       <motion.div

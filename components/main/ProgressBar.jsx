@@ -20,8 +20,14 @@ const ProgressBar = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 w-full h-1 z-50">
-      <div className="h-full bg-purple-500" style={{ width: scrollProgress }} />
+    <div className="fixed top-0 left-0 w-full h-[2px] sm:h-1 z-[60]">
+      <div
+        className="h-full bg-purple-500 transition-all duration-200"
+        style={{
+          width: scrollProgress,
+          boxShadow: '0 0 8px rgba(168, 85, 247, 0.4)'
+        }}
+      />
     </div>
   );
 };

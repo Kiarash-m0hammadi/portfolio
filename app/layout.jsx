@@ -5,7 +5,7 @@ import ClientLayout from '../components/main/ClientLayout';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: `Kia's Portfolio`,
+  title: 'Space Portfolio',
   description: 'This is my portfolio'
 };
 

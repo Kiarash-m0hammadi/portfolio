@@ -1,36 +1,129 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Modern Portfolio Website
 
-## Getting Started
+## [Portfolio Preview](https://portfolio-five-gilt-36.vercel.app/)
 
-First, run the development server:
+A cutting-edge portfolio website built with the latest web technologies, featuring stunning animations, 3D elements, and smooth interactions. View the live demo **[here](https://portfolio-five-gilt-36.vercel.app/).**
+
+## ✨ Features
+
+- 🌟 Modern UI/UX with sleek animations
+- 🎨 Dynamic star background with mouse interaction
+- 💫 Smooth page transitions and loading states
+- 🖥️ Live project previews
+- 📱 Fully responsive design
+- ⚡ Optimized performance
+- 🌓 Custom loading animations
+- 🎯 Interactive project cards
+
+## 🛠️ Technologies
+
+### Frontend
+
+- **Next.js** - React framework with App Router
+- **React** - UI development
+- **Framer Motion** - Smooth animations
+- **Tailwind CSS** - Styling
+- **Three.js/React Three Fiber** - 3D elements
+- **TypeScript** - Type safety
+
+### Animation & Interaction
+
+- Custom mouse-follow effects
+- Intersection Observer animations
+- Parallax scrolling
+- Dynamic loading states
+- Interactive 3D elements
+
+### Performance
+
+- Route prefetching
+- Image optimization
+- Code splitting
+- Lazy loading
+- SEO optimized
+
+## 🚀 Project Structure
+
+```
+portfolio/
+├── app/
+│   ├── layout.jsx
+│   ├── page.jsx
+│   └── loading.jsx
+├── components/
+│   ├── main/
+│   │   ├── Hero.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Skills.jsx
+│   │   └── ...
+│   └── sub/
+│       ├── HeroContent.jsx
+│       ├── ProjectCard.jsx
+│       └── ...
+├── public/
+│   └── assets/
+└── utils/
+    └── motion.js
+```
+
+## 🎯 Key Features Explained
+
+### Dynamic Star Background
+
+- Interactive star field that responds to mouse movement
+- Custom WebGL rendering with Three.js
+- Optimized performance with object pooling
+
+### Project Showcases
+
+- Live website previews
+- Custom loading states
+- Animated borders and transitions
+- Responsive grid layout
+
+### Skill Section
+
+- Dynamic grid system
+- Custom animations for each skill
+- Responsive design
+- Interactive elements
+
+## 🔧 Installation & Setup
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Kiarash-m0hammadi/portfolio.git
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 💫 Custom Animations
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The project features several custom animations:
 
-## Learn More
+- Slide transitions using Framer Motion
+- Mouse-follow effects on star background
+- Loading screen animations
+- Scroll-triggered reveals
+- Hover effects on project cards
 
-To learn more about Next.js, take a look at the following resources:
+## 📱 Responsive Design
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Mobile-first approach
+- Breakpoint-specific layouts
+- Optimized images
+- Touch-friendly interactions
+- Adaptive typography

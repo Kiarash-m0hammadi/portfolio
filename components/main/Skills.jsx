@@ -19,7 +19,7 @@ const Skills = () => {
     >
       <SkillText />
 
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 sm:gap-5 mt-4 w-full max-w-[1200px]">
+      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
         {Skill_data.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -31,7 +31,7 @@ const Skills = () => {
         ))}
       </div>
 
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 sm:gap-5 mt-4 w-full max-w-[1200px]">
+      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
         {Frontend_skill.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -42,7 +42,7 @@ const Skills = () => {
           />
         ))}
       </div>
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 sm:gap-5 mt-4 w-full max-w-[1200px]">
+      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
         {Backend_skill.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -53,7 +53,7 @@ const Skills = () => {
           />
         ))}
       </div>
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 sm:gap-5 mt-4 w-full max-w-[1200px]">
+      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
         {Full_stack.map((image, index) => (
           <SkillDataProvider
             key={index}
@@ -64,7 +64,7 @@ const Skills = () => {
           />
         ))}
       </div>
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 sm:gap-5 mt-4 w-full max-w-[1200px]">
+      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
         {Other_skill.map((image, index) => (
           <SkillDataProvider
             key={index}

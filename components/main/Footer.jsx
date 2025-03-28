@@ -1,69 +1,83 @@
-"use client";
+'use client';
 
-import React from "react";
+import React from 'react';
 import {
   RxDiscordLogo,
   RxGithubLogo,
   RxInstagramLogo,
   RxTwitterLogo,
-  RxLinkedinLogo,
-} from "react-icons/rx";
+  RxLinkedinLogo
+} from 'react-icons/rx';
 
-import { FaYoutube } from "react-icons/fa";
+import { FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] ">
+    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-4 sm:p-8 mt-10">
       <div className="w-full flex flex-col items-center justify-center m-auto">
-        <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
-          <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-            <div className="font-bold text-[16px]">Community</div>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <FaYoutube />
-              <span className="text-[15px] ml-[6px]">Youtube</span>
-            </p>
+        <div className="w-full h-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl">
+          {/* Community Section */}
+          <div className="flex flex-col items-center sm:items-start">
+            <h3 className="font-bold text-lg mb-4">Community</h3>
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center mb-3 hover:text-purple-400 transition-colors"
+            >
+              <FaYoutube className="text-xl" />
+              <span className="ml-2">Youtube</span>
+            </a>
             <a href="https://github.com/Kiarash-m0hammadi">
-              <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                <RxGithubLogo />
-                <span className="text-[15px] ml-[6px]">Github</span>
-              </p>
+              <div className="flex items-center mb-3 hover:text-purple-400 transition-colors">
+                <RxGithubLogo className="text-xl" />
+                <span className="ml-2">Github</span>
+              </div>
             </a>
             <a href="https://discord.com/invite/pKrH2eGg">
-              <p className="flex flex-row items-center my-[15px] cursor-pointer">
-                <RxDiscordLogo />
-                <span className="text-[15px] ml-[6px]">Discord</span>
-              </p>
+              <div className="flex items-center mb-3 hover:text-purple-400 transition-colors">
+                <RxDiscordLogo className="text-xl" />
+                <span className="ml-2">Discord</span>
+              </div>
             </a>
           </div>
-          <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-            <div className="font-bold text-[16px]">Social Media</div>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <FaYoutube />
-              <span className="text-[15px] ml-[6px]">Instagram</span>
-            </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <RxGithubLogo />
-              <span className="text-[15px] ml-[6px]">Twitter</span>
-            </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <RxDiscordLogo />
-              <span className="text-[15px] ml-[6px]">Linkedin</span>
-            </p>
+
+          {/* Social Media Section */}
+          <div className="flex flex-col items-center sm:items-start">
+            <h3 className="font-bold text-lg mb-4">Social Media</h3>
+            <a href="#" className="flex items-center mb-3 hover:text-purple-400 transition-colors">
+              <RxInstagramLogo className="text-xl" />
+              <span className="ml-2">Instagram</span>
+            </a>
+            <a href="#" className="flex items-center mb-3 hover:text-purple-400 transition-colors">
+              <RxTwitterLogo className="text-xl" />
+              <span className="ml-2">Twitter</span>
+            </a>
+            <a href="#" className="flex items-center mb-3 hover:text-purple-400 transition-colors">
+              <RxLinkedinLogo className="text-xl" />
+              <span className="ml-2">LinkedIn</span>
+            </a>
           </div>
-          <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
-            <div className="font-bold text-[16px]">About</div>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <span className="text-[15px] ml-[6px]">place holder</span>
-            </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <span className="text-[15px] ml-[6px]">place holder</span>
-            </p>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <span className="text-[15px] ml-[6px]">
-                kiarash7.mohammadi@gmail.com
-              </span>
-            </p>
+
+          {/* About Section */}
+          <div className="flex flex-col items-center sm:items-start">
+            <h3 className="font-bold text-lg mb-4">About</h3>
+            <a href="#" className="mb-3 hover:text-purple-400 transition-colors">
+              Portfolio
+            </a>
+            <a href="#" className="mb-3 hover:text-purple-400 transition-colors">
+              Contact
+            </a>
+            <a
+              href="mailto:kiarash7.mohammadi@gmail.com"
+              className="mb-3 hover:text-purple-400 transition-colors break-all"
+            >
+              kiarash7.mohammadi@gmail.com
+            </a>
           </div>
+        </div>
+        <div className="w-full border-t border-gray-800 mt-8 pt-4 text-center text-sm text-gray-400">
+          © 2024 Kiarash Mohammadi. All rights reserved.
         </div>
       </div>
     </div>

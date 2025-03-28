@@ -1,3 +1,4 @@
+"use client";
 export const Skill_data = [
   {
     skill_name: "Html 5",

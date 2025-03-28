@@ -1,3 +1,5 @@
+"use client";
+
 export function slideInFromLeft(delay) {
   return {
     hidden: { x: -100, opacity: 0 },
